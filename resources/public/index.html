@@ -1,6 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <script src="interface.js"></script>
@@ -8,22 +9,22 @@
 </head>
 
 <body>
-  <form>
-
-    <div class="velocity">
-      <input type="number" id="velocity" placeholder="Velocity" />
-      <div class="velocity-slider"></div>
+  <div class="container">
+    <div class="velocity variable">
+      <span class="variable-name">Velocity</span>
+      <div class="velocity slider"></div>
+      <input class="variable-value" id="velocity"/>
     </div>
 
-    <div class="stories">
-      <input type="number" id="stories" placeholder="Stories" />
-      <div class="stories-slider"></div>
+    <div class="stories variable">
+      <span class="variable-name">Stories</span>
+      <div class="stories slider"></div>
+      <input class="variable-value" id="stories"/>
     </div>
 
     <input type="button" id="stats-btn" value="Get Estimates!" />
-  </form>
-  <div id="results"></div>
-
+    <div id="results"></div>
+  </div>
   <script type="text/javascript" src="./estimate.js"></script>
 </body>
 </html>

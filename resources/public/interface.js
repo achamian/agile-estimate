@@ -1,6 +1,6 @@
 $(function() {
   var value = 100;
-  $(".velocity-slider").slider({
+  $(".velocity.slider").slider({
     min: 0,
     max: 100,
     value: value,
@@ -11,7 +11,7 @@ $(function() {
     }
   });
 
-  $(".stories-slider").slider({
+  $(".stories.slider").slider({
     min: 0,
     max: 100,
     value: value,
