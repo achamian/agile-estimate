@@ -4,28 +4,30 @@
   <link rel="stylesheet" href="style.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-  <script src="interface.js"></script>
   <title>Agile Estimate</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="velocity variable">
+    <div class="velocity variable column">
       <span class="variable-name">Velocity</span>
       <div class="velocity slider"></div>
       <input class="variable-value" id="velocity"/>
     </div>
 
-    <div class="stories variable">
+    <div class="stories variable column">
       <span class="variable-name">Stories</span>
       <div class="stories slider"></div>
       <input class="variable-value" id="stories"/>
     </div>
 
-    <input type="button" id="stats-btn" value="Get Estimates!" />
-    <div id="results"></div>
+    <div class="results column">
+      <span id="results"></span>
+      <input class="dont-show" type="button" id="stats-btn" value="Get Estimates!" />
+    </div>
   </div>
-  <script type="text/javascript" src="./estimate.js"></script>
+  <script src="interface.js"></script>
+  <script src="estimate.js"></script>
 </body>
 </html>
 

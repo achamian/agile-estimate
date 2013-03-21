@@ -4,7 +4,7 @@
   height: 400px;
 }
 
-.variable {
+.column {
   height: 350px;
   width: 100px;
   display: inline-block;
@@ -12,11 +12,19 @@
   margin: 0 50px;
 }
 
-.slider {
+.variable {
+}
+
+.slider, .results {
   height: 250px;
   margin: 40px;
 }
 
 .variable-value {
   width: 40px;
+  text-align: center;
+}
+
+.dont-show {
+  display: none;
 }
